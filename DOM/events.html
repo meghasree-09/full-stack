@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events explanation</title>
+</head>
+<body>
+    
+    <!-- 
+    an event an action perfermed by the user or browser
+    Example:
+    1.clicking a button
+    2.Typing in textbox
+    3.submitting forms
+    4.moving the mouse
+    5.pressing any key
+    Js listens to this events and performs
+    //common events
+    1.click->user will click an element
+    2.submit->form is submitted
+    3.change->input value changes
+    4.keyup->key is released
+    5.keydown->key is pressed
+    6.mouseover->mouse enters the element
+    7.mouseout->mouse leaves the element
+    
+    
+    -->
+    <h1>Events Explanation</h1>
+    <!-- Inline event -->
+    <!-- <button onclick="showmessage()">Click me</button> -->
+    <button id="btn">Click me</button>
+
+    <hr>
+    <form id="loginform">
+        <input 
+            type="text"
+            placeholder="username"
+        />
+        <button>submit</button>
+
+    </form><br><br>
+    <h3>change event example</h3>
+    <select id="course">
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>JS</option>
+     </select><br><br>
+     <h3>color picker Example</h3>
+     <input type="color" id="colorpicker">
+     <br><br>
+     <h3>keyup example</h3>
+     <input type="text" 
+     id="username"/> 
+     <p id="count">0</p>
+     <button id="button1">on</button>
+     <button id="button2">off</button>
+
+
+
+
+
+
+
+
+
+    <script src="events.js"></script>
+</body>
+</html>
