@@ -1,0 +1,163 @@
+div{
+    /* starts in a new line *occupies full width */
+    display: block;
+}
+span{
+    display: inline;
+}
+span{
+    display:inline-block;
+    width:200px;
+    height:100px;
+    background: red;
+}
+/* div{
+    /* display:none; */
+    /* visibility: hidden;Hides the excess content */
+    /* overflow: visible;  */
+    /* overflow:auto; */
+/* } */
+/* Position Properties */
+/* div{ */
+    /* position: static; */
+    /* position: relative;
+    top:5px;
+    left: 20px; */
+/* } */
+/* .parent{
+    position: relative;
+}
+.child{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+div{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+h1{
+    position: sticky;
+    top: 0; */
+
+/* }  */
+.container{
+    display: flex;
+    flex-direction:row;
+    /* justify-content:center; */
+    align-items:stretch;
+    flex-wrap: wrap;
+    gap:20px;
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background: coral;
+}
+/*
+1 2 3 4 5 6 7 8 
+wrap:
+1 2 3 4
+5 6 7 8
+*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+/* Flexbox:row or column */
+/* CSS Grid:row & columns */
+.container1{
+    display: grid;
+    /* create the columns */
+    /* grid-template-columns:1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 100px 100px 100px; */
+    /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
+    gap: 20px;
+    grid-template-areas: "header header" "sidebar content" "footer footer";
+}
+.item1{
+    width: 100px;
+    height: 100px;
+    /* gap: 20px; */
+    background: skyblue;
+}
+body{
+    background-color: lightblue;
+    background-image: url(doremon1.jpg);
+    background-size: contain;
+    background-position:center ;
+    background-repeat: no-repeat;
+}
+h1{
+    text-shadow: 2px 2px 2px gray
+}
+button:hover{
+    background: red;
+    color:white
+
+}
+input{
+    padding:10px;
+    border:2px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+input:hover{
+    border:2px solid blue;
+}
+button:active{
+    transform:scale(0.95)
+}
+.box{
+    width:100px;
+    height:50px;
+    background:red;
+    /* transform: translate(50px,20px); */
+    /* transform: rotate(45deg); */
+    /* resize my element */
+    transform: scale(1.5);
+
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border-radius: 50%; */
+}
+.card:hover{
+    transform:scale(1.1)
+}
+.card{
+    transform: skew(20deg);
+}
+.card{
+    transform: translateY(-10px);
+    scale:(1.1);
+    rotate:(5deg);
+}
+.newbtn{
+    background: blue;
+    /* transition: 1s; */
+   
+}
+.newbtn:hover{
+    background: red;
+    transition-duration: 0.5s;
+     transition-timing-function:ease-in-out ;
+}
