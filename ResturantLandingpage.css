@@ -1,0 +1,8 @@
+body{
+    background: url("restaurant.jpeg") no-repeat center center/cover;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    color: blue;
+  background-attachment: fixed;
+}
+
