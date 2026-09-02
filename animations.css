@@ -1,0 +1,94 @@
+.box{
+    height: 80px;
+    width: 80px;
+    background: skyblue;
+    position: relative;
+    animation: move 2s infinite alternate;
+    animation: bounce 3s 5;
+}
+@keyframes bounce{
+    0%{left:0;background:red;}
+    50%{left:200px;background:yellow;}
+    100%{left:0;background:pink;}
+}
+@keyframes move{
+    from{
+        left: 0;
+    }
+    to{
+        left: 300px;
+    }
+
+}
+.box1{
+     height: 80px;
+    width: 80px;
+    background: skyblue;
+    animation: colorChange 3s infinite;
+
+}
+@keyframes colorChange{
+    from{background: sky;
+    }
+    to{
+        background: pink;
+
+    }
+}
+/* write a spinner example */
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 5px solid darkorchid;
+    border-radius: 50%;
+    border-top: 5px solid blue;
+    animation: spin 1s infinite;
+
+}
+@keyframes spin{
+    from{transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* mobile view */
+.box1{
+    width:100%
+}
+/* laptop */
+@media(min-width:768px){
+    .box{
+        width:80%
+    }
+}
+h1{
+    font-size: 40px;
+}
+@media(max-width:768px){
+    h1{
+        font-size: 24px;
+    }
+}
+/* mobile:576px
+tablet:768px
+laptop:992px
+desktop:1200px 
+*/
+img{
+    /* overflow */
+    width:500px;
+}
+/* solution */
+img{
+    max-width: 100%;
+    height: auto;
+}
+:root{
+    --primary-color:#256eb;
+    --secondary-color:#06b46d4;
+    --dark:#1f2937
+}
+h5{
+    background: var(--primary-color);
+}
