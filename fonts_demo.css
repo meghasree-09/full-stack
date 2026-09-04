@@ -1,0 +1,72 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+p{
+    /* control thickness */
+    font-weight:900 ;
+    /* 100-thin
+    300-light
+    400-normal
+    700-bold
+    900-extra bold */
+    font-style:italic;
+}
+p{
+    font-style:italic;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* short hand font property */
+p{
+    font:italic bold 20px Arial;
+    text-align:justify;
+}
+/* text decoretors */
+h1{
+    text-decoration: overline;
+    text-decoration: line-through;
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-transform:uppercase ;
+    text-transform:lowercase ;
+    text-transform:capitalize ;
+}
+p{
+    letter-spacing: 5px;
+    line-height: 40px;
+
+}
+.container{
+    width:300px;
+    height:200px;
+    padding:10px;
+    margin:100px 40px 30px 40px;
+    border:solid;
+    text-align: justify;
+    background-color: blue;
+
+}
+.circle{
+    width:100px;
+    height:100px;
+    background-color: blueviolet;
+    border:2px solid black ;
+    border-radius: 100px;
+    /* round corners */
+    border-radius:10%
+}
+button{
+
+    background-color: blue;
+    color:white;
+    transition: background 0.5s ease-in-out;
+
+}
+button:hover{
+    background: red;
+}
