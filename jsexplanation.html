@@ -1,0 +1,125 @@
+<!-- 
+ JS-is a highlevel dynamic programming language
+ used to make web pages interactive or responsive
+ HTML--structure
+ CSS--Styling
+ JS-Functionality 
+ Execution flow:
+                  source code
+                      |
+                  interpreter
+                      |
+                    machine executes one
+                    line at a time with JIT(just in time)
+                        |
+                    optimized machine code
+JIT:is a technique where code is compiled into a machine code while the program is running
+->instead of compiling everything beforehand 
+JIT compiler:Identifies frequently executed code ("Hot code")
+It compiles that into optimized machine code
+
+ JavaScript(v8 engine in chrome and node.js)
+ java--jvm
+
+ how js works in browser
+ html file
+    |
+ browser
+    |
+ HTML parser
+     |
+DOM created(document object model )
+     |
+javascript engine(js)
+      |
+   page
+ 
+ 
+ 
+  -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Explanation</title>
+
+ </head>
+ <body>
+     <h1>welcome to chalapathi</h1>
+     <!-- <button onclick="showmessage()">click me</button> -->
+    <script>
+        //Variables:
+        //var,let,const-->keywords
+        var account_num=10;//global variable
+        let a =10;
+        let b =20;
+        console.log(a);
+        console.log(b);
+        const year=2005;
+        const pi=3.14;
+        console.log(pi)
+        //we cant able to declare the same variable here but redeclaration is possible with var
+        var account_num=718889;
+        console.log(account_num);
+        var first_name="Megha";
+        //data types
+        //1.string
+        let name="Megha";
+        console.log(typeof name)
+        //2.number
+        let num =20;
+        console.log(typeof num)
+        //3.Boolean:
+        let isStudent=true;
+        console.log(typeof isStudent)
+        //4.undefined:
+        let salary;
+        console.log(typeof salary)
+        //5.null
+        let data=null;
+        console.log(typeof data)
+        //6.object
+        let student={
+            name:"Megha",rollno:8
+        };
+        console.log(typeof student)
+        //operators
+        let x=5;
+        let y=6;
+        console.log(x+y);
+        //assignment operator
+        let d=5;
+        d+=5
+        //comparision operators:
+        //<,>,<=,>=...
+        //strictly equalto
+        console.log(x==y)
+        //logical operators:
+        //&&,|,!
+        // console.log(alert("Welcome to fullstack"));
+        //prompt:
+        // let number=prompt("Enter the number:")
+        // console.log(number)
+        // let result=confirm("Are you sure?")
+        // console.log(result)
+        //Templet Literal
+        let myname="megha"
+        console.log("Hello"+ myname);
+        console.log(`Hello ${myname}`)
+        //task :take 2 numbers from user
+        //perform addition,sub,mul,div
+        //make sure to use templet literals
+        let c=prompt("Enter the number")
+        let e=prompt("Enter the number")
+        console.log(`${c}` + `${e}`)
+        console.log(`${c}` - `${e}`)
+        console.log(`${c}` * `${e}`)
+        console.log(`${c}` % `${e}`)
+
+
+    </script>
+
+   
+ </body>
+ </html>
