@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color</title>
+    <style>
+        h1{
+            color:rgba(255,0,0,5);
+            /* HSL-Hue Saturation Lightness */
+            color:hsl(18°,32%,38%)
+        }
+        p{
+            /* units:px,% */
+            font-size:40px;
+            /* %percentage relative to the parent */
+        }
+        .parent{
+            width:400px;
+        }
+        .child{
+            width:50%
+        }
+        /* em relative to parent size */
+        .parent{
+            font-size: 20px;
+        }
+        .child{
+            font-size: 2em;
+            /* 2*parent(20)=40px */
+        }
+        /* rem-->relative to root element */
+        html{
+            font-size: 16px;
+        }
+        h1{
+            font-size: 2rem;
+            /* 2*html(rem)=32px */
+        }
+        /* vh-->viewport height */
+        .hero{
+            height:100vh;
+            /* 100 per screen height */
+
+        }
+        /* vw-->viewport width */
+        .banner{
+            width:100vw;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>welcome to college</h1>
+    <p>come regularly</p>
+    <div class="Parent">
+        <div class="child"></div>
+        units
+
+
+    </div>
+</body>
+</html>
