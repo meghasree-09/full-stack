@@ -1,0 +1,52 @@
+/* h1{
+    color:coral;
+    font-style: normal;
+} */
+p{
+    color:brown;
+    background-color:black;
+}
+/* class selector used to group the elements */
+.title{
+    color: blueviolet;
+}
+/* Id selector */
+#main-heading{
+    color:blue
+}
+/* Universal selector */
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* group selector */
+h1,p,button{
+    color:blueviolet
+}
+/* desecndent selector */
+div li{
+    color:red
+}
+/* child selector only for the first child */
+div > li{
+    color:green;
+}
+/* attribute selector */
+input[type="text"]{
+    background-color: yellow;
+}
+input[type="password"]{
+    color:azure
+}
+/* colors */
+h1{
+    /* namining of color */
+    color:red;
+    /* Hexadecimal values */
+    /* color:#RRGGBB syntax*/
+    color:0000ff;
+    /* RGB->red green blue 0--255 */
+    color:rgb(126, 86, 86);
+    /* a-Transparency */
+    color:rgba(255,0,0,5)
+
+}
